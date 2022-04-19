@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "beerlog"
+version = "0.1.0"
+description = ""
+authors = ["Bruno Rocha <rochacbruno@gmail.com>"]
+include = ["beerlog/settings.toml"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sqlmodel = "^0.0.6"
+fastapi = "^0.75.2"
+typer = "^0.4.1"
+rich = "^12.2.0"
+dynaconf = "^3.1.8"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.2.0"
+
+[tool.poetry.scripts]
+beerlog = "beerlog.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
