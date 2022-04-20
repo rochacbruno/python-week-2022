@@ -10,12 +10,22 @@ e módulos, porém a maioria dos arquivos encontra-se vazio.
 A apartir deste template você poderá acompanhar as lives  
 da Python week e programar junto com o Bruno e o Jeferson.
 
+## Obtendo seu repositório
+
+1. Crie um **fork** (cópia) deste repositório clicando em [fork](https://github.com/rochacbruno/python-week-2022/fork)
+2. O seu repositório estará em https:// github.com / SEUNOME / python-week-2022
+3. Copie a URL do seu repositório (você vai precisar depois)
+
 ## Preparando o ambiente
 
 - Você pode rodar localmente em seu computador desde que tenha o Python 3.8+
+    - Para rodar localmente faça o clone com `git clone https://github.com/SEUNOME/python-week-2022`
+    - Acesse a pasta `cd python-week-2022
 - Você pode rodar no [https://replit.com/](https://replit.com/) diretamente no browser
+    - Para rodar no replit, crie um replit e escolha a opção `importar do github`
 - Você pode rodar no [https://gitpod.io](https://gitpod.io)
-- Ou qualquer plataforma que permita executar Python 3.8
+    - Para rodar no gitpod acesse no navegador `https://gitpod.io/#https://github.com/SEUNOME/python-week-2022`
+- Ou em qualquer plataforma que permita executar Python 3.8
 
 ## Requisitos
 
