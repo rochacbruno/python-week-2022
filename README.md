@@ -20,9 +20,9 @@ da Python week e programar junto com o Bruno e o Jeferson.
 
 - Você pode rodar localmente em seu computador desde que tenha o Python 3.8+
     - Para rodar localmente faça o clone com `git clone https://github.com/SEUNOME/python-week-2022`
-    - Acesse a pasta `cd python-week-2022
+    - Acesse a pasta `cd python-week-2022`
 - Você pode rodar no [https://replit.com/](https://replit.com/) diretamente no browser
-    - Para rodar no replit, crie um replit e escolha a opção `importar do github`
+    - Para rodar no replit, crie um replit e escolha a opção `importar do github` e informe o reposit
 - Você pode rodar no [https://gitpod.io](https://gitpod.io)
     - Para rodar no gitpod acesse no navegador `https://gitpod.io/#https://github.com/SEUNOME/python-week-2022`
 - Ou em qualquer plataforma que permita executar Python 3.8
