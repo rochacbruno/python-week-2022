@@ -18,6 +18,8 @@ da Python week e programar junto com o Bruno e o Jeferson.
 
 ## Preparando o ambiente
 
+> **OBS** substitua `SEUNOME` pelo seu nome de usuário do github.
+
 - Você pode rodar localmente em seu computador desde que tenha o Python 3.8+
     - Para rodar localmente faça o clone com `git clone https://github.com/SEUNOME/python-week-2022`
     - Acesse a pasta `cd python-week-2022`
@@ -37,21 +39,27 @@ Este template utiliza o gerenciador de pacotes **poetry**
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ```
-### Ou em outros ambientes (incluindo o gitpod)
 
 `Em outros ambientes pode instalar com `
 ```bash
 pip install --user poetry
 ```
 
->  No replit.com o poetry já está disponível
+>  No replit.com o poetry já está disponível e no gitpod será instalado assim que o ambiente iniciar.
 
 ## Instalando o ambiente
 
 ```bash
 poetry install
 poetry shell
+```
+
+
+Executando
+```bash
 beerlog
+# ou
+python -m beerlog
 ```
 
 Se apareceu `Hello from beerlog` então está tudo certo.
