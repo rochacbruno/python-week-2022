@@ -2,11 +2,12 @@
 tasks:
   - name: "Prepare Environment"
     init: > 
-      pip install --upgrade pip &&
-      pip install --upgrade poetry &&
       poetry install &&
-      poetry shell &&
-      clear
+      gp sync-done install
+  - name: "Activate the shell"
+    init: gp sync-await install
+    command: poetry shell
+  - name: "Beerlog"
     command: beerlog
 
 # Ports to expose on workspace startup
@@ -22,3 +23,6 @@ vscode:
     - "tamasfe.even-better-toml"
     - "alexcvzz.vscode-sqlite"
     - "jdinhlife.gruvbox"
+
+image:
+  file: .gitpod.Dockerfile
