@@ -28,5 +28,9 @@
   "sqlite.logLevel": "DEBUG",
   "python.formatting.provider": "black",
   "editor.renderWhitespace": "boundary",
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "python.pythonPath": "/home/gitpod/.cache/pypoetry/virtualenvs/beerlog-DlEBh_72-py3.8/bin/python",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true
 }
