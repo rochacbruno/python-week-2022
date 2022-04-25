@@ -19,5 +19,14 @@
     "coverage.xml": true,
     ".pytest_cache": true
   },
-  "editor.mouseWheelZoom": true
+  "editor.mouseWheelZoom": true,
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "sqlite.logLevel": "DEBUG",
+  "python.formatting.provider": "black",
+  "editor.renderWhitespace": "boundary",
+  "workbench.tree.renderIndentGuides": "always"
 }
