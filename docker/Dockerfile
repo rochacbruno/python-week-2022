@@ -59,10 +59,16 @@ ENV \
     PIP_NO_CACHE_DIR=off \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100
+ENV \
+    PORT=8000
 
 # Get build artifact wheel and install it respecting dependency versions
 WORKDIR $APP_PATH
 COPY --from=build $APP_PATH/dist/*.whl ./
 COPY --from=build $APP_PATH/constraints.txt ./
 RUN pip install ./$APP_NAME*.whl --constraint constraints.txt
-CMD ["uvicorn", "beerlog.api:api", "--host=0.0.0.0","--port=8000","--reload"]
+
+COPY ./docker/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["uvicorn", "beerlog.api:api", "--host=0.0.0.0","--port=$PORT"]
