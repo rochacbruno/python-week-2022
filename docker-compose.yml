@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - BEERLOG_DATABASE__url=postgresql://postgres:postgres@db:5432/beerlog
+    volumes:
+      - .:/home/app/web
+    depends_on:
+      - db
+  db:
+    build: docker/postgres
+    image: beerlog_postgres-13-alpine-multi-user
+    volumes:
+      - $HOME/.postgres/beerlog_db/data/postgresql:/var/lib/postgresql/data
+    ports:
+      - 5435:5432
+    environment:
+      - POSTGRES_DBS=beerlog, beerlog_test
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres

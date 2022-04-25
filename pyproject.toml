@@ -15,6 +15,7 @@ dynaconf = "^3.1.8"
 black = "^22.3.0"
 flake8 = "^4.0.1"
 uvicorn = "^0.17.6"
+psycopg2-binary = "^2.9.3"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.2.0"
