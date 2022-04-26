@@ -1,3 +1,4 @@
+---
 # Commands to start on workspace startup
 tasks:
   - name: "Prepare Environment"
@@ -14,7 +15,6 @@ tasks:
 #   - port: 8000
 #     onOpen: open-preview
 #     visibility: public
-
 vscode:
   extensions:
     - "ms-python.python@2021.9.1218897484"
@@ -22,3 +22,4 @@ vscode:
     - "tamasfe.even-better-toml"
     - "alexcvzz.vscode-sqlite"
     - "jdinhlife.gruvbox"
+    - ms-toolsai.jupyter
