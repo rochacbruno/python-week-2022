@@ -4,11 +4,11 @@ Template Para a Python Week 2022 - 25 a 29 de Abril na Linux Tips
 
 ## Instruções
 
-Este repositório é um template de um projeto Python minimo  
+Este repositório é um template de um projeto Python mínimo.  
 O programa se chama `beerlog` e está organizado com pastas
 e módulos, porém a maioria dos arquivos encontra-se vazio.
 
-A apartir deste template você poderá acompanhar as lives  
+A partir deste template você poderá acompanhar as lives  
 da Python week e programar junto com o Bruno e o Jeferson.
 
 ## Obtendo seu repositório
@@ -20,17 +20,17 @@ da Python week e programar junto com o Bruno e o Jeferson.
 
 ## Preparando o ambiente
 
-> **OBS** substitua `SEUNOME` pelo seu nome de usuário do github.
+> **OBS**: substitua `SEUNOME` pelo seu nome de usuário do github.
 
 - Você pode rodar localmente em seu computador desde que tenha o Python 3.8+
   - Para rodar localmente faça o clone com `git clone https://github.com/SEUNOME/python-week-2022`
   - Acesse a pasta `cd python-week-2022`
 - Você pode rodar no [https://gitpod.io](https://gitpod.io) **recomendado**
   - Para rodar no gitpod acesse no navegador `https://gitpod.io/#https://github.com/SEUNOME/python-week-2022`
-  - **OBS** O plano free do gitpod permite o uso de 40 horas do ambiente.
+  - **OBS**: O plano free do gitpod permite o uso de 40 horas do ambiente.
 - Você pode rodar no [https://replit.com/](https://replit.com/) diretamente no browser
   - Para rodar no replit, crie um replit e escolha a opção `importar do github` e informe o repositório
-  - **OBS** O replit.com tem limite de consumo de memória e CPU
+  - **OBS**: O replit.com tem limite de consumo de memória e CPU
 - Ou em qualquer plataforma que permita executar Python 3.8
 
 ## Requisitos
