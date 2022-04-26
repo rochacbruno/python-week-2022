@@ -18,9 +18,11 @@ def add_beer_to_database(
             image=image,
             cost=cost,
         )
+        beer = Beer(name="Lagunitas", style="IPA", flavor=10, image=10, cost=5)
         session.add(beer)
-        session.commit()
-
+        session.commit()   
+        for beer in session.exec(select(Beer).where(Beer.style == "IPA")):
+            print(beer.name, beer.style, beer.rate)    
     return True
 
 def get_beers_from_database(style: Optional[str] = None) -> List[Beer]:

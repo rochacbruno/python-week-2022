@@ -23,7 +23,6 @@ def add(
     else:
         print("\N{no entry} - Cannot add beer to database.")
 
-
 @main.command("list")
 def list_beers(style: Optional[str] = None):
     """Lists beers from the database"""
