@@ -19,5 +19,8 @@
     "coverage.xml": true,
     ".pytest_cache": true
   },
-  "editor.mouseWheelZoom": true
+  "editor.mouseWheelZoom": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true
 }

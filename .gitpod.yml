@@ -1,13 +1,14 @@
+---
 # Commands to start on workspace startup
 tasks:
   - name: "Prepare Environment"
-    init: > 
+    command: > 
       pip install --upgrade pip &&
       pip install --upgrade poetry &&
+      poetry config virtualenvs.in-project true &&
       poetry install &&
       poetry shell &&
-      clear
-    command: beerlog
+      beerlog
 
 # Ports to expose on workspace startup
 # ports:
@@ -18,7 +19,8 @@ tasks:
 vscode:
   extensions:
     - "ms-python.python@2021.9.1218897484"
-    - "redhat.vscode-yaml"
     - "tamasfe.even-better-toml"
     - "alexcvzz.vscode-sqlite"
     - "jdinhlife.gruvbox"
+    - ms-toolsai.jupyter-renderers
+    - ms-toolsai.jupyter-keymap
