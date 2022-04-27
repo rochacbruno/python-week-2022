@@ -1,10 +1,11 @@
-from typing import Optional, List
-from fastapi import FastAPI, Response, status
-from beerlog.core import get_beers_from_database
-from beerlog.serializers import BeerIn, BeerOut
-from beerlog.models import Beer
-from beerlog.database import get_session
+from typing import List, Optional
 
+from fastapi import FastAPI, Response, status
+
+from beerlog.core import get_beers_from_database
+from beerlog.database import get_session
+from beerlog.models import Beer
+from beerlog.serializers import BeerIn, BeerOut
 
 api = FastAPI(title="beerlog ")
 
