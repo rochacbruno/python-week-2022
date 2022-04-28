@@ -15,6 +15,11 @@ dynaconf = "^3.1.8"
 uvicorn = "^0.17.6"
 pandas = "^1.4.2"
 matplotlib = "^3.5.1"
+jupyter = "^1.0.0"
+lxml = "^4.8.0"
+bs4 = "^0.0.1"
+requests = "^2.27.1"
+html5lib = "^1.1"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.2.0"
