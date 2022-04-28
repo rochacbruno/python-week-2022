@@ -6,9 +6,9 @@ def test_add_beer_to_database():
 
 
 def test_get_beers_from_database():
-    #Arrange
+    # Arrange
     add_beer_to_database("Blue Moon", "Witbier", 10, 3, 6)  # NEW
-    #Act
+    # Act
     results = get_beers_from_database()
-    #Assert
+    # Assert
     assert len(results) > 0
