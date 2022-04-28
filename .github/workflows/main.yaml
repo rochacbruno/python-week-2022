@@ -35,7 +35,7 @@
           run: poetry run black -l 79 --check --diff beerlog tests
 
         - name: Run tests
-          run: poety run pytest -v --junitxml=test-result.xml
+          run: poetry run pytest -v --junitxml=test-result.xml
 
         - name: Publish Junit results
           uses: EnricoMi/publish-unit-test-result-action@v1
