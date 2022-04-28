@@ -23,7 +23,7 @@
           with:
             python-version: ${{matrix.python-version}}
         - name: Install Poetry
-          run: pip install --upgrade pip && pip install poetry
+          run: pip install --upgrade pip && pip install poetry && pip install pytest && pip install requests && pip install isort
 
         - name: Install Project
           run: poetry install
@@ -35,7 +35,7 @@
           run: poetry run black -l 79 --check --diff beerlog tests
 
         - name: Run tests
-          run: poetry run pytest -v --junitxml=test-result.xml
+          run: poetry run python pytest -v --junitxml=test-result.xml
 
         - name: Publish Junit results
           uses: EnricoMi/publish-unit-test-result-action@v1
