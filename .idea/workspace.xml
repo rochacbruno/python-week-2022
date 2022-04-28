@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ae77bce-3d91-4922-94e1-252edfc17162" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/main.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_functional_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_functional_cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beerlog.db" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beerlog/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beerlog/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beerlog/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog/cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beerlog/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beerlog/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beerlog/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beerlog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beerlog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beerlog/settings.toml" beforeDir="false" afterPath="$PROJECT_DIR$/beerlog/settings.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
