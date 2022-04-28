@@ -11,4 +11,4 @@ def each_test_uses_separate_database(request):
     engine = create_engine(f"sqlite:///{test_db}")
     models.SQLModel.metadata.create_all(bind=engine)
     with patch("beerlog.database.engine", engine):
-        yield #return do protocolo generator (mais poderoso que o o return)
+        yield  # return do protocolo generator (mais poderoso que o o return)

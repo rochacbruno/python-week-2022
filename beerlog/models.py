@@ -2,6 +2,7 @@
 from typing import Optional
 from sqlmodel import SQLModel, Field
 from pydantic import validator
+
 # from sqlmodel import select
 from statistics import mean
 from datetime import datetime
