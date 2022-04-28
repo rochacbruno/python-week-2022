@@ -16,7 +16,7 @@ spec:
         app: beerlog
     spec:
       containers:
-      - image: linuxtips/beerlog:1.0
+      - image: linuxtips/beerlog:2.0
         name: beerlog
         ports:
         - containerPort: 8000
