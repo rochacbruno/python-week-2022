@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: beerlog
+  name: beerlog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: beerlog
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: beerlog
+    spec:
+      containers:
+      - image: linuxtips/beerlog:1.0
+        name: beerlog
+        ports:
+        - containerPort: 8000
+        resources: {}
+status: {}
