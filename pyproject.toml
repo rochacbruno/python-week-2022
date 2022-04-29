@@ -19,6 +19,8 @@ uvicorn = "^0.17.6"
 [tool.poetry.dev-dependencies]
 ipython = "^8.2.0"
 black = {version = "^22.3.0", allow-prereleases = true}
+pytest = "^7.1.2"
+requests = "^2.27.1"
 
 [tool.poetry.scripts]
 beerlog = "beerlog.__main__:main"
