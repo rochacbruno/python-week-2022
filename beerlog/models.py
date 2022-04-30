@@ -1,5 +1,4 @@
 from sqlmodel import SQLModel, Field
-from sqlalchemy import select
 from datetime import datetime
 from typing import Optional
 from pydantic import validator
