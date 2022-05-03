@@ -14,9 +14,12 @@ rich = "^12.2.0"
 dynaconf = "^3.1.8"
 black = "^22.3.0"
 flake8 = "^4.0.1"
+uvicorn = "^0.17.6"
+requests = "^2.27.1"
 
 [tool.poetry.dev-dependencies]
 ipython = "^8.2.0"
+pytest = "^7.1.2"
 
 [tool.poetry.scripts]
 beerlog = "beerlog.__main__:main"
