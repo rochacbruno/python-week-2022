@@ -1,0 +1,44 @@
+name: CI
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: true
+      matrix:
+        python-version: ['3.8', '3.10']
+        os: [ubuntu-latest]
+    runs-on: ${{matrix.os}}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{matrix.python-version}}
+      - name: Install Poetry
+        run: pip install --upgrade pip && pip install poetry
+
+      - name: Install Project
+        run: poetry install
+      
+      - name: Look for style errors
+        run: poetry run flake8 beerlog
+      
+      - name: Look for auto format errors
+        run: poetry run black -l 79 --check --diff beerlog tests
+      
+      - name: Run tests
+        run: poetry run pytest -v --junitxml=test-result.xml
+      
+      - name: publish junit results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        if: always()
+        with:
+          files: test-result.xml
+          check_name: Test Result (Python ${{matrix.python-version}})

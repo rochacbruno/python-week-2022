@@ -2,14 +2,13 @@
 # Commands to start on workspace startup
 tasks:
   - name: "Prepare Environment"
-    command: > 
+    command: >
       pip install --upgrade pip &&
       pip install --upgrade poetry &&
       poetry config virtualenvs.in-project true &&
       poetry install &&
       poetry shell &&
       beerlog
-
 # Ports to expose on workspace startup
 # ports:
 #   - port: 8000
