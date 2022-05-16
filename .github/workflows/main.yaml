@@ -7,7 +7,7 @@ on:
     branches:
       - "*"
   workflow_dispatch:
-
+permissions: write-all
 jobs:
   test:
     strategy:
